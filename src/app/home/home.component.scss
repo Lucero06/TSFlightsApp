@@ -1,0 +1,105 @@
+.outer_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  
+    .big_container {
+      width: 90%;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+    
+      .top_bar {
+        height: 40px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        span {margin-left: 20px;}
+        div.notice {
+          margin-left: 20px;
+          div.sub-text {font-size: 0.8em; color: red};
+        }
+      }
+    
+      .transparent_bg {
+        background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
+        height: auto;
+        min-height: 400px;
+        width: 100%;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .search_pane {
+            margin-top: 20px;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+             .search_box {
+              display: flex;
+              flex-direction: column;
+              margin-right: 10px;
+              position: relative;
+                select{
+                  position: relative;
+                  right: 20px;
+                  background-color: white; 
+                  box-shadow: 2px 2px 2px grey;
+                  width: auto;
+                  height: 25px;
+                  font-size: 20px;
+                  @media screen and (max-width: 480px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+            button {
+              background-color: #415D65;
+              border-radius: 5px;
+              width: auto;
+              font-size: 20px;
+              color: white;
+            }
+          }
+  
+          .flight_pane {
+            margin-top: 10px;
+            background-color: white;
+            width: 80%;
+            height: 80%;
+            padding: 20px;
+  
+            .flight_results {
+              display: flex;
+              flex-direction: row;
+          }
+          
+            .flight_headers {
+                display: flex;
+                flex-direction: row;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+            }
+            
+            .cell {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  

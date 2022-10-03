@@ -1,0 +1,61 @@
+.admin_panel {
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color:white;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    input { width: 200px; border: 1px solid grey;}
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    span{font-size: 0.9em; margin-top: 10px;}
+    .non_stop_box{
+        display: flex;
+        flex-direction: row;
+    }
+    button{ background-color: green;}
+}
+
+.editPanel, .notice-panel {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color: #ddd;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    width: 90%;
+ 
+    
+    @media screen and (max-width: 500px){
+        width: 90%;
+    }
+    padding: 5px;
+    border-radius: 5px;
+
+    .flightTable{
+        font-size: 0.5em;
+        @media screen and (max-width: 719px){
+            input{max-width: 50px};
+          }
+        @media screen and (max-width: 500px){
+          input{max-width: 25px};
+        }
+    }
+
+    button.update{
+        background-color: gold;
+    }
+
+    button.delete{
+        background-color: red;
+    }
+
+}
